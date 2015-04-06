@@ -1,0 +1,166 @@
+<div style="font-family: 'Lucida Grande', 'Segoe UI', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif; font-size: 0.9em; overflow-x: hidden; overflow-y: auto; margin: 0px !important; padding: 5px 20px 26px !important; background-color: rgb(255, 255, 255);font-family: 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, SimSun, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Segoe UI', AppleSDGothicNeo-Medium, 'Malgun Gothic', Verdana, Tahoma, sans-serif; padding: 20px;padding: 20px; color: rgb(34, 34, 34); font-size: 15px; font-family: 'Roboto Condensed', Tauri, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, SimSun, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Segoe UI', AppleSDGothicNeo-Medium, 'Malgun Gothic', Verdana, Tahoma, sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; background: rgb(255, 255, 255);"><h1 id="introduction" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;margin-top: 0px;"><a name="introduction" href="#introduction" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Introduction</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">什麼是軟件架構<ul>
+<li style="display: list-item; line-height: 1.4em;">SEI：是整個程序活計算系統的結構（Structure），包含了程序的元素（Software Elements）和哪些外部能看見的元素屬性（Properties）和元素之間的關係（Relationship）。</li><li style="display: list-item; line-height: 1.4em;">IEEE：是那些給一個系統建設性的設計（Design）和進化（Evolution）。</li><li style="display: list-item; line-height: 1.4em;">定義：<ul>
+<li style="display: list-item; line-height: 1.4em;">關於軟件設計（Software design）</li><li style="display: list-item; line-height: 1.4em;">關於視圖（Views）：高層視圖、設計決策</li><li style="display: list-item; line-height: 1.4em;">系統的組織結構（Structure/Organization）：元素和關係（Elements/Relationship）</li><li style="display: list-item; line-height: 1.4em;">屬性（Properties）</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">軟件架構做什麼<ul>
+<li style="display: list-item; line-height: 1.4em;">架構定義了結構（Architecture defines structure）：<ul>
+<li style="display: list-item; line-height: 1.4em;">定義組件接口</li><li style="display: list-item; line-height: 1.4em;">定義組件的交流和依賴</li><li style="display: list-item; line-height: 1.4em;">定義組件的職責</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構說明組件的交流<ul>
+<li style="display: list-item; line-height: 1.4em;">數據傳遞機制</li><li style="display: list-item; line-height: 1.4em;">控制流</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構傳遞非功能性需求（NFRs）<ul>
+<li style="display: list-item; line-height: 1.4em;">包括了技術約束，商務約束和質量約束</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構是個抽象</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">軟件架構如何而來<ul>
+<li style="display: list-item; line-height: 1.4em;">不僅僅侷限于需求</li><li style="display: list-item; line-height: 1.4em;">可能是商業和技術決定的集合</li><li style="display: list-item; line-height: 1.4em;">經常受以下因素影響：<ul>
+<li style="display: list-item; line-height: 1.4em;">系統利益相關者</li><li style="display: list-item; line-height: 1.4em;">開發組織</li><li style="display: list-item; line-height: 1.4em;">架構師</li><li style="display: list-item; line-height: 1.4em;">系統環境</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構的視圖<ul>
+<li style="display: list-item; line-height: 1.4em;">邏輯視圖：定義必要的元素和體系中的關係</li><li style="display: list-item; line-height: 1.4em;">過程視圖：描述元素之間的交流依賴</li><li style="display: list-item; line-height: 1.4em;">物理視圖：主要的進程和元素是怎麼映射到硬件</li><li style="display: list-item; line-height: 1.4em;">開發視圖：捕捉內部的元素聯繫</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構活動和過程<ul>
+<li style="display: list-item; line-height: 1.4em;">架構活動包括四大步驟(P.26)<ul>
+<li style="display: list-item; line-height: 1.4em;">發現架構重要需求（ASRs，Architecturally Significant Requirements）</li><li style="display: list-item; line-height: 1.4em;">架構設計（Architecture Design)</li><li style="display: list-item; line-height: 1.4em;">視圖和文檔（Documenting）</li><li style="display: list-item; line-height: 1.4em;">架構評估（Architecture Evaluation）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Lifecycle<ul>
+<li style="display: list-item; line-height: 1.4em;">架構分析</li><li style="display: list-item; line-height: 1.4em;">架構評估</li><li style="display: list-item; line-height: 1.4em;">架構實現</li><li style="display: list-item; line-height: 1.4em;">架構合成</li><li style="display: list-item; line-height: 1.4em;">架構維護 </li></ul>
+</li></ul>
+</li></ol><h1 id="quality-attributes" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="quality-attributes" href="#quality-attributes" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Quality Attributes</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">選件要求<ul>
+<li style="display: list-item; line-height: 1.4em;">功能需求（Functional Requirements）<ul>
+<li style="display: list-item; line-height: 1.4em;">描述了如何給利益相關者產生價值</li><li style="display: list-item; line-height: 1.4em;">描述了系統的職責</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">質量需求（NFRs）<ul>
+<li style="display: list-item; line-height: 1.4em;">非功能性需求用於質量需求中</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">約束（Constrains）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">質量屬性<ul>
+<li style="display: list-item; line-height: 1.4em;">軟件開發各個階段傳遞出的需求</li><li style="display: list-item; line-height: 1.4em;">場景（Modeling Quality Attribute Scenarios）（P.15)<ul>
+<li style="display: list-item; line-height: 1.4em;">Stimulus：刺激，是一個系統需要考慮到的發生的情況</li><li style="display: list-item; line-height: 1.4em;">Source of stimulus：人或其他實體產生這個刺激</li><li style="display: list-item; line-height: 1.4em;">Response：收到刺激後的活動反應</li><li style="display: list-item; line-height: 1.4em;">Response measure：反應衡量標準</li><li style="display: list-item; line-height: 1.4em;">Environment：當接收到刺激后系統的狀況，是正在運行還是過載</li><li style="display: list-item; line-height: 1.4em;">Artifact：系統中的一個部件，當需求應用於的一個部份，可能是整個系統</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">質量設計決定七大分類（P.17）</li><li style="display: list-item; line-height: 1.4em;">質量屬性（P.19）<ul>
+<li style="display: list-item; line-height: 1.4em;">Availablity：可用性<ul>
+<li style="display: list-item; line-height: 1.4em;">和整個程序的可靠性（Reliability）有關</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Interoperability：互用性<ul>
+<li style="display: list-item; line-height: 1.4em;">描述多個系統通過接口交換特定信息的屬性，包括交換和正確推斷消息</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Modifiability：可更改性<ul>
+<li style="display: list-item; line-height: 1.4em;">用於評估一個更改所消耗的時間和金錢</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Performance：性能<ul>
+<li style="display: list-item; line-height: 1.4em;">關於系統需要處理需求的時間</li><li style="display: list-item; line-height: 1.4em;">氛圍處理時間和阻塞時間</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Security：安全性<ul>
+<li style="display: list-item; line-height: 1.4em;">衡量系統保護數據和信息的能力</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Testability：可測試性<ul>
+<li style="display: list-item; line-height: 1.4em;">能夠發現各個部件的輸入和觀察到它們的輸出</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Usability：可用性<ul>
+<li style="display: list-item; line-height: 1.4em;">用戶去完成一個特定任務的容易性評估</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">X-ability</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Scenario（情景刻畫）表格<ul>
+<li style="display: list-item; line-height: 1.4em;">Source</li><li style="display: list-item; line-height: 1.4em;">Stimulus</li><li style="display: list-item; line-height: 1.4em;">Artifact</li><li style="display: list-item; line-height: 1.4em;">Environment</li><li style="display: list-item; line-height: 1.4em;">Response</li><li style="display: list-item; line-height: 1.4em;">Response Measure</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">架構重要需求（ASRs，Architecturally Significant Requirements）<ul>
+<li style="display: list-item; line-height: 1.4em;">如何獲得 ASRs：<ul>
+<li style="display: list-item; line-height: 1.4em;">從需求文檔（Requirement Documents）</li><li style="display: list-item; line-height: 1.4em;">從訪談利益相關人員（Stakeholders）</li><li style="display: list-item; line-height: 1.4em;">理解商業目標（Business Goals）</li><li style="display: list-item; line-height: 1.4em;">從功能樹（Utility Tree）</li></ul>
+</li></ul>
+</li></ol><h1 id="architecture-patterns" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="architecture-patterns" href="#architecture-patterns" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Architecture Patterns</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">架構模式（Architecture Patterns）<ul>
+<li style="display: list-item; line-height: 1.4em;">是在不斷嘗試中找到的一種設計決策的集合</li><li style="display: list-item; line-height: 1.4em;">可複用</li><li style="display: list-item; line-height: 1.4em;">描述一種架構的類別</li><li style="display: list-item; line-height: 1.4em;">包含了：<ul>
+<li style="display: list-item; line-height: 1.4em;">上下文（Context）</li><li style="display: list-item; line-height: 1.4em;">問題（Problem）</li><li style="display: list-item; line-height: 1.4em;">解決方式（Solution）：元素、關係和約束</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">模塊模式（Module Patterns）<ul>
+<li style="display: list-item; line-height: 1.4em;">分層模式（Layered Pattern）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">連接件模式（Component-Connector Patterns）<ul>
+<li style="display: list-item; line-height: 1.4em;">代理模式（Broker Pattern）</li><li style="display: list-item; line-height: 1.4em;">MVC 模式（Model-View-Controller Pattern）</li><li style="display: list-item; line-height: 1.4em;">管道過濾模式（Pipe-and-Filter Pattern）</li><li style="display: list-item; line-height: 1.4em;">客戶端服務器模式（Client-Server Pattern）</li><li style="display: list-item; line-height: 1.4em;">點對點模式（Peer-to-Peer Pattern）</li><li style="display: list-item; line-height: 1.4em;">面向服務的模式（Service-Oriented Pattern）</li><li style="display: list-item; line-height: 1.4em;">發佈訂閱模式（Publish-Subscribe Pattern）</li><li style="display: list-item; line-height: 1.4em;">共享數據模式（Shared-Data Pattern）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">分配模式（Allocation Patterns）<ul>
+<li style="display: list-item; line-height: 1.4em;">多鏈模式(Multi-Tier Pattern)<ul>
+<li style="display: list-item; line-height: 1.4em;">Client、Web、EJB、Backend</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">（Map-Reduce Pattern）<ul>
+<li style="display: list-item; line-height: 1.4em;">Map to parition and merge</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">模式和策略（Patterns &amp; Tactics）<ul>
+<li style="display: list-item; line-height: 1.4em;">區別於 Pattern，Tacitc 更簡單，密度更小。</li><li style="display: list-item; line-height: 1.4em;">Pattern 會互相包含和交叉。</li><li style="display: list-item; line-height: 1.4em;">Pattern 通常包含多個設計方案。</li><li style="display: list-item; line-height: 1.4em;">Pattern 和 Tactic 共同構建了整個架構基礎的工具。</li><li style="display: list-item; line-height: 1.4em;">Pattern 看的角度不同。</li><li style="display: list-item; line-height: 1.4em;">Pattern 會包含一定的 Tactic。</li></ul>
+</li></ol><h1 id="designing-architecture" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="designing-architecture" href="#designing-architecture" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Designing Architecture</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">設計方法（Design Strategy）<ul>
+<li style="display: list-item; line-height: 1.4em;">分解（Decomposition）</li><li style="display: list-item; line-height: 1.4em;">迭代（Iteration）</li><li style="display: list-item; line-height: 1.4em;">生成和測試（Generate and Test）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">ADD（Attribute-Driven Design）<ul>
+<li style="display: list-item; line-height: 1.4em;">確認需求（Confirm there is sufficient requirements infomation）</li><li style="display: list-item; line-height: 1.4em;">選擇一個系統元素分解（Choose an element of the system to decompose）</li><li style="display: list-item; line-height: 1.4em;">為該元素確認架構必要需求（Identify the ASRs for the chosen element）<ul>
+<li style="display: list-item; line-height: 1.4em;">H, M, L 的二維數組：（對利益相關者的重要性，對架構實現的影響）即（Importance，Difficulty）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">選擇一個符合架構必要需求的設計理念（Choose a design concept that satisfies the ASRs）<ul>
+<li style="display: list-item; line-height: 1.4em;">確認設計顧慮（Identify design concerns）</li><li style="display: list-item; line-height: 1.4em;">列出不同的模式和策略去解決顧慮（List alternative patterns/tactics for subordinate concerns）</li><li style="display: list-item; line-height: 1.4em;">選擇合適的模式和策略（Select patterns/tactics from the list）</li><li style="display: list-item; line-height: 1.4em;">決定架構必要需求和模式策略之間的關係（Determine relationship between patterns/tactics and ASRs）</li><li style="display: list-item; line-height: 1.4em;">捕獲架構視圖（Capture preliminary architecture views）</li><li style="display: list-item; line-height: 1.4em;">評估并解決可持續性問題（Evaluate and resolve inconsistencies）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">實例化架構元素和分配職責（Instantiate architectural elements and allocate responsibilities）</li><li style="display: list-item; line-height: 1.4em;">為元素定義接口（Define interfaces for instantiated elements）</li><li style="display: list-item; line-height: 1.4em;">確認需求、為元素構造約束（Verify and refine requirements and make them constraints for instantiated elements）</li><li style="display: list-item; line-height: 1.4em;">重複以上步驟（Repeat until satisfied）</li><li style="display: list-item; line-height: 1.4em;"><strong> 總的來說，選擇一個部份去設計，考慮所有的必要架構需求，建立并測試這個設計，評估滿足質量屬性的輸入輸出 </strong></li></ul>
+</li></ol><h1 id="documenting-architecture" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="documenting-architecture" href="#documenting-architecture" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Documenting Architecture</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">文檔的好處和不足<ul>
+<li style="display: list-item; line-height: 1.4em;">好處<ul>
+<li style="display: list-item; line-height: 1.4em;">更好地交流</li><li style="display: list-item; line-height: 1.4em;">幫助理解決策</li><li style="display: list-item; line-height: 1.4em;">更新設計者的思維</li><li style="display: list-item; line-height: 1.4em;">鍛鍊設計架構的能力</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">不足<ul>
+<li style="display: list-item; line-height: 1.4em;">沒有標準化</li><li style="display: list-item; line-height: 1.4em;">大型系統時間長</li><li style="display: list-item; line-height: 1.4em;">註釋缺失</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Views and Beyond（視圖和之外的東西）<ul>
+<li style="display: list-item; line-height: 1.4em;">Views<ul>
+<li style="display: list-item; line-height: 1.4em;">Style、Pattern、View 的區別：<ul>
+<li style="display: list-item; line-height: 1.4em;">Style：只關注方案，不包含具體的上下文和問題（Problem &amp; Context）</li><li style="display: list-item; line-height: 1.4em;">Pattern：關注問題和上下文</li><li style="display: list-item; line-height: 1.4em;">View：</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Views：<ul>
+<li style="display: list-item; line-height: 1.4em;">Module Views（模塊視圖）：強調靜態</li><li style="display: list-item; line-height: 1.4em;">C&amp;C Views（連接件視圖）：強調動態</li><li style="display: list-item; line-height: 1.4em;">Allocation Views（部署視圖）：周圍環境</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Documenting Views（如何寫文檔）：<ul>
+<li style="display: list-item; line-height: 1.4em;">建立一個利益相關者的視圖表格：不同的利益相關者對不同視圖有不同的關注點</li><li style="display: list-item; line-height: 1.4em;">合併視圖</li><li style="display: list-item; line-height: 1.4em;">優先級和分佈：80/20 原則</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Beyond<ul>
+<li style="display: list-item; line-height: 1.4em;">文檔模板<ul>
+<li style="display: list-item; line-height: 1.4em;">版本控制</li><li style="display: list-item; line-height: 1.4em;">Roadmap</li></ul>
+</li></ul>
+</li></ul>
+</li></ol><h1 id="evaluating-architecture" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="evaluating-architecture" href="#evaluating-architecture" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Evaluating Architecture</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">為什麼要評估<ul>
+<li style="display: list-item; line-height: 1.4em;">大型項目經常遲交</li><li style="display: list-item; line-height: 1.4em;">重新設計</li><li style="display: list-item; line-height: 1.4em;">提早發現問題</li><li style="display: list-item; line-height: 1.4em;">提供一個項目技術管理</li><li style="display: list-item; line-height: 1.4em;">儘早評估</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">體繫結構權衡分析方法（ATAM，Architecture Tradeoff Analysis Method）<ul>
+<li style="display: list-item; line-height: 1.4em;">評估方式：設計者、夥伴、外界人士</li><li style="display: list-item; line-height: 1.4em;">階段：<ul>
+<li style="display: list-item; line-height: 1.4em;">Phase 0：參與者和準備階段（Partnership &amp; Preparation）<ul>
+<li style="display: list-item; line-height: 1.4em;">前提：有體系結構文檔</li><li style="display: list-item; line-height: 1.4em;">結果：評估計劃──誰、什麼時間、提供什麼樣子的評估報告</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Phase 1：評估（Evaluation）<ul>
+<li style="display: list-item; line-height: 1.4em;">參與者：評估小組和決策者</li><li style="display: list-item; line-height: 1.4em;">結果：精確地關於架構的演講、商業目標、質量屬性、功能樹、危險、敏感的觀點</li><li style="display: list-item; line-height: 1.4em;">Step 1：表述這個方法，Present the ATAM</li><li style="display: list-item; line-height: 1.4em;">Step 2：表述商業動機，Present the business drivers──包括最重要的功能性需求、約束、商業目的、主要利益相關、架構驅動</li><li style="display: list-item; line-height: 1.4em;">Step 3：表述架構，Present architecture──表述架構的技術約束和系統</li><li style="display: list-item; line-height: 1.4em;">Step 4：確定使用的架構方法，Identify Architectural Approaches</li><li style="display: list-item; line-height: 1.4em;">Step 5：生成質量屬性效用樹，Generate quality attribute utility tree──決定性的一步，重新劃分優先級</li><li style="display: list-item; line-height: 1.4em;">Step 6：分析架構方法，Analyze architectural approaches</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Phase 2：評估第二環節<ul>
+<li style="display: list-item; line-height: 1.4em;">參與者：涉及到利益獲得者</li><li style="display: list-item; line-height: 1.4em;">結果：一個優先級場景的列表、危險和商業動機</li><li style="display: list-item; line-height: 1.4em;">Step 1：展示，Present the ATAM &amp; Previous Results</li><li style="display: list-item; line-height: 1.4em;">Step 7：頭腦風暴、場景劃分優先級，Brainstorm &amp; Prioritize Scenarios</li><li style="display: list-item; line-height: 1.4em;">Step 8：分析架構方法，Analyze architectural approaches──根據優先級重新分析</li><li style="display: list-item; line-height: 1.4em;">Step 9：展示，Present Results</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Phase 3：後續工作（Follow up）<ul>
+<li style="display: list-item; line-height: 1.4em;">參與者：評估小組和主要利益相關者</li><li style="display: list-item; line-height: 1.4em;">結果：最終的評估報告</li></ul>
+</li></ul>
+</li></ul>
+</li></ol><h1 id="software-product-line" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="software-product-line" href="#software-product-line" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Software Product Line</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">什麼是產品線<ul>
+<li style="display: list-item; line-height: 1.4em;">很多相關近似的商品</li><li style="display: list-item; line-height: 1.4em;">Products：Custom Assets 和 Core Assets</li><li style="display: list-item; line-height: 1.4em;">共享同一個通用的、符合特定需求的軟件特定系統</li><li style="display: list-item; line-height: 1.4em;">Core Assets：<ul>
+<li style="display: list-item; line-height: 1.4em;">Reuse（復用）：在 SPL 中大量使用</li><li style="display: list-item; line-height: 1.4em;">提供特定的信息知識和經驗</li><li style="display: list-item; line-height: 1.4em;">提供大量不同的（Variation）特點適應不同特性</li><li style="display: list-item; line-height: 1.4em;">實現的需求在 SPL 的圈子中</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Custom Assets：<ul>
+<li style="display: list-item; line-height: 1.4em;">對於特定的產品</li><li style="display: list-item; line-height: 1.4em;">滿足用戶特定的需求</li><li style="display: list-item; line-height: 1.4em;">實現 SPL 圈子中的需求</li><li style="display: list-item; line-height: 1.4em;">集成 Core Assets</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Reuse &amp; Variation<ul>
+<li style="display: list-item; line-height: 1.4em;">復用：代碼復用是最容易的</li><li style="display: list-item; line-height: 1.4em;">變動：讓代碼更加靈活，現在設計，未來復用</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">PLA（Product Line Architecture）<ul>
+<li style="display: list-item; line-height: 1.4em;">定義公用的功能和可改變的功能</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Variation Mechanisms<ul>
+<li style="display: list-item; line-height: 1.4em;">Forms of variation 6</li><li style="display: list-item; line-height: 1.4em;">Software entity varied 3</li><li style="display: list-item; line-height: 1.4em;">Binding time 5</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Product line approach<ul>
+<li style="display: list-item; line-height: 1.4em;">3 Essential Activities<ul>
+<li style="display: list-item; line-height: 1.4em;">Software Engineering</li><li style="display: list-item; line-height: 1.4em;">Technical Management</li><li style="display: list-item; line-height: 1.4em;">Organizational Management</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">29 Practice Areas</li><li style="display: list-item; line-height: 1.4em;">12 (22) Practice Patterns</li><li style="display: list-item; line-height: 1.4em;">V Cycle</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Extractive<ul>
+<li style="display: list-item; line-height: 1.4em;">分析產品核心的部份</li><li style="display: list-item; line-height: 1.4em;">提取核心和異同</li><li style="display: list-item; line-height: 1.4em;">重新組裝</li></ul>
+</li></ol><h1 id="model-driven-architecture" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="model-driven-architecture" href="#model-driven-architecture" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Model Driven Architecture</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">Model Driven Development（MDD）模塊驅動開發<ul>
+<li style="display: list-item; line-height: 1.4em;">分離開功能定義和功能實現</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">什麼是 MDA<ul>
+<li style="display: list-item; line-height: 1.4em;">MDA 遵循 OMG</li><li style="display: list-item; line-height: 1.4em;">建模語言之間的標準──MOF</li><li style="display: list-item; line-height: 1.4em;">層次：<ul>
+<li style="display: list-item; line-height: 1.4em;">CIM（Computation independent model），計算獨立模型，關注系統的環境和需求<ul>
+<li style="display: list-item; line-height: 1.4em;">PIM（Platform independent model），平台獨立模型，關注整個架構的實現和計算，和平台無關</li><li style="display: list-item; line-height: 1.4em;">PSM（platform specific model），平台特定模型，關注在特定平台上的計算，和平台有關</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">目標：<ul>
+<li style="display: list-item; line-height: 1.4em;">可移植性（Portability）</li><li style="display: list-item; line-height: 1.4em;">交互性（Interoperability）</li><li style="display: list-item; line-height: 1.4em;">可重用性（Reusablility）</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">不足：<ul>
+<li style="display: list-item; line-height: 1.4em;">多義性</li><li style="display: list-item; line-height: 1.4em;">複雜性</li><li style="display: list-item; line-height: 1.4em;">從頭構建和剪裁通用模塊語言的平衡</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Architecture Description Language（ADL）</li></ol><h1 id="service-oriented-architecture" style="clear: both;font-size: 2.2em; font-weight: bold; margin: 1.5em 0px 1em;"><a name="service-oriented-architecture" href="#service-oriented-architecture" style="text-decoration: none; vertical-align: baseline;color: rgb(50, 105, 160);"></a>Service Oriented Architecture</h1><ol style="list-style-type: decimal;">
+<li style="display: list-item; line-height: 1.4em;">Why SOA<ul>
+<li style="display: list-item; line-height: 1.4em;">優勢：從已有的服務上建立商業過程，組件的復用和解耦</li><li style="display: list-item; line-height: 1.4em;">技術：XML、Web Services、Service Bus</li><li style="display: list-item; line-height: 1.4em;">Service Find-Bind-Execute Digram<ul>
+<li style="display: list-item; line-height: 1.4em;">三者關係（註冊，尋找，綁定）</li><li style="display: list-item; line-height: 1.4em;">Service Consumer</li><li style="display: list-item; line-height: 1.4em;">Service Provider</li><li style="display: list-item; line-height: 1.4em;">Registry</li></ul>
+</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">SOA 不是 Web 服務<ul>
+<li style="display: list-item; line-height: 1.4em;">SOA 是一種架構方式</li><li style="display: list-item; line-height: 1.4em;">Web Service 是實現手段之一</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">WSDL &amp; SOAP<ul>
+<li style="display: list-item; line-height: 1.4em;">Envelope</li><li style="display: list-item; line-height: 1.4em;">Header</li><li style="display: list-item; line-height: 1.4em;">Body</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">Enterprise Service Bus（ESB）<ul>
+<li style="display: list-item; line-height: 1.4em;">ESB 提供一個環境和平台但是並不能實現 SOA</li></ul>
+</li><li style="display: list-item; line-height: 1.4em;">實現<ul>
+<li style="display: list-item; line-height: 1.4em;">自下而上：確定需求調用已有服務和添加新的內容構建服務。</li><li style="display: list-item; line-height: 1.4em;">自上而下：分析已有服務，在基礎上構建新的服務。</li></ul>
+</li></ol></div>
